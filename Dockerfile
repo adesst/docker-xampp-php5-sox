@@ -1,12 +1,17 @@
 # Build with:
-# 	docker build -t cswl/xampp .
+# 	docker build -t defyma/xampp .
 
 FROM ubuntu:18.04
 
+ENV DEBIAN_FRONTEND noninteractive
+
 # Install curl and net-stats for XAMPP
+RUN apt-get update && apt-get install -yq --no-install-recommends apt-utils
+
 RUN apt-get update && \
     apt-get -yq upgrade && \
-	apt-get install -yq curl net-tools
+	apt-get install -yq curl net-tools	
+
 
 # Download the installer
 RUN XAMPP_DL_LINK=' \
