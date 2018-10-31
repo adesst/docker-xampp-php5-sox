@@ -1,7 +1,7 @@
 ## xampp-docker
 Fork From https://github.com/cswl/xampp-docker
 
-Docker image containg the latest XAMPP PHP 5.6.
+Docker image containg Ubuntu 18.04, XAMPP PHP 5.6.
 
 The install.js script is a temporary workaround for building XAMPP in docker.  
 Note: This image was built for development purposes.

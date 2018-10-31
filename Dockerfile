@@ -1,16 +1,16 @@
 # Build with:
 # 	docker build -t cswl/xampp .
 
-FROM ubuntu:17.10
+FROM ubuntu:18.04
 
 # Install curl and net-stats for XAMPP
 RUN apt-get update && \
     apt-get -yq upgrade && \
 	apt-get install -yq curl net-tools
 
-# Download the installer (7.2.4)
+# Download the installer
 RUN XAMPP_DL_LINK=' \
-	https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/7.2.4/xampp-linux-x64-7.2.4-0-installer.run?from_af=true  \
+	https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/5.6.38/xampp-linux-x64-5.6.38-0-installer.run?from_af=true  \
 	' \ 
 	&& curl -L -o xampp-linux-installer.run $XAMPP_DL_LINK
 
