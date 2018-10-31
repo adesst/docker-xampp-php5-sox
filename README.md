@@ -1,17 +1,18 @@
 ## xampp-docker
+Fork From https://github.com/cswl/xampp-docker
 
-Docker image containg the latest XAMPP 7.2.4.
+Docker image containg the latest XAMPP PHP 5.6.
 
 The install.js script is a temporary workaround for building XAMPP in docker.  
 Note: This image was built for development purposes.
 
 ## Getting the image:
 
-The image has been pushed to [Dockerhub](https://hub.docker.com/r/cswl/xampp/)  
+The image has been pushed to [Dockerhub](https://hub.docker.com/r/defyma/xampp-php5/)  
 So you can just:
 
 ```
-docker pull cswl/xampp
+docker pull defyma/xampp-php5
 ```
 
 ## Running the image:
@@ -48,4 +49,4 @@ The scripts and Dockerfile are licensed under the GPL-3.0 license.
 
 The Dockerfile was made with refrences from :
 
-[tomsik68/docker-xampp](https://github.com/tomsik68/docker-xampp) unlicensed and [fuyuanli/Dockerfile-XAMPP](https://github.com/fuyuanli/Dockerfile-XAMPP) which is licensed under GPL v3.0.
+[tomsik68/docker-xampp](https://github.com/tomsik68/docker-xampp) unlicensed and [fuyuanli/Dockerfile-XAMPP](https://github.com/fuyuanli/Dockerfile-XAMPP) which is  licensed under GPL v3.0.
