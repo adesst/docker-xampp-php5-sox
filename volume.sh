@@ -1,1 +1,1 @@
-docker volume create xamppy-docker
+docker volume create xampp-docker

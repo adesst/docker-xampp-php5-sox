@@ -1,5 +1,5 @@
 # Build with:
-# 	docker build -t defyma/xampp .
+# 	docker build -t defyma/xampp-php5 .
 
 FROM ubuntu:18.04
 

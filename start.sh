@@ -1,5 +1,5 @@
-IMAGE_NAME=defyma/xampp
-CONTAINER_NAME=xamppy-docker
+IMAGE_NAME=defyma/xampp-php5
+CONTAINER_NAME=xampp-docker
 PUBLIC_WWW_DIR='~/web_pages'
 
 
