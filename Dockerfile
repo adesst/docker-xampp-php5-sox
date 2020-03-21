@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -yq --no-install-recommends apt-utils
 
 RUN apt-get update && \
     apt-get -yq upgrade && \
-	apt-get install -yq curl net-tools	
-
+	apt-get install -yq curl net-tools && \
+    apt-get install -y vim	
 
 # Download the installer
 RUN XAMPP_DL_LINK=' \
@@ -53,6 +53,9 @@ EXPOSE 80 443 3306
 
 ADD init.sh /usr/local/bin/init.sh
 RUN chmod 777 /usr/local/bin/init.sh
+
+ADD init.sh /usr/local/bin/restart.sh
+RUN chmod 777 /usr/local/bin/restart.sh
 
 # Start the init script
 ENTRYPOINT ["/usr/local/bin/init.sh"]
