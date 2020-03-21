@@ -54,7 +54,7 @@ EXPOSE 80 443 3306
 ADD init.sh /usr/local/bin/init.sh
 RUN chmod 777 /usr/local/bin/init.sh
 
-ADD init.sh /usr/local/bin/restart.sh
+ADD restart.sh /usr/local/bin/restart.sh
 RUN chmod 777 /usr/local/bin/restart.sh
 
 # Start the init script
